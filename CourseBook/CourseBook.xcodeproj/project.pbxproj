@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC496CBD1FB57F5F001A9EE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC496CBC1FB57F5F001A9EE8 /* AppDelegate.swift */; };
+		AC496CBF1FB57F5F001A9EE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC496CBE1FB57F5F001A9EE8 /* ViewController.swift */; };
+		AC496CC21FB57F5F001A9EE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC496CC01FB57F5F001A9EE8 /* Main.storyboard */; };
+		AC496CC51FB57F5F001A9EE8 /* CourseBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC496CC31FB57F5F001A9EE8 /* CourseBook.xcdatamodeld */; };
+		AC496CC71FB57F5F001A9EE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC496CC61FB57F5F001A9EE8 /* Assets.xcassets */; };
+		AC496CCA1FB57F5F001A9EE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC496CC81FB57F5F001A9EE8 /* LaunchScreen.storyboard */; };
+		AC496CD71FB58FCB001A9EE8 /* Catigary+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC496CD11FB58FCB001A9EE8 /* Catigary+CoreDataClass.swift */; };
+		AC496CD81FB58FCB001A9EE8 /* Catigary+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC496CD21FB58FCB001A9EE8 /* Catigary+CoreDataProperties.swift */; };
+		AC496CD91FB58FCB001A9EE8 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC496CD31FB58FCB001A9EE8 /* Image+CoreDataClass.swift */; };
+		AC496CDA1FB58FCB001A9EE8 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC496CD41FB58FCB001A9EE8 /* Image+CoreDataProperties.swift */; };
+		AC496CDB1FB58FCB001A9EE8 /* Course+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC496CD51FB58FCB001A9EE8 /* Course+CoreDataClass.swift */; };
+		AC496CDC1FB58FCB001A9EE8 /* Course+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC496CD61FB58FCB001A9EE8 /* Course+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AC496CB91FB57F5F001A9EE8 /* CourseBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC496CBC1FB57F5F001A9EE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC496CBE1FB57F5F001A9EE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC496CC11FB57F5F001A9EE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC496CC41FB57F5F001A9EE8 /* CourseBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CourseBook.xcdatamodel; sourceTree = "<group>"; };
+		AC496CC61FB57F5F001A9EE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC496CC91FB57F5F001A9EE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC496CCB1FB57F5F001A9EE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC496CD11FB58FCB001A9EE8 /* Catigary+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Catigary+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AC496CD21FB58FCB001A9EE8 /* Catigary+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Catigary+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AC496CD31FB58FCB001A9EE8 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AC496CD41FB58FCB001A9EE8 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AC496CD51FB58FCB001A9EE8 /* Course+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Course+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AC496CD61FB58FCB001A9EE8 /* Course+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Course+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC496CB61FB57F5F001A9EE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC496CB01FB57F5F001A9EE8 = {
+			isa = PBXGroup;
+			children = (
+				AC496CBB1FB57F5F001A9EE8 /* CourseBook */,
+				AC496CBA1FB57F5F001A9EE8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC496CBA1FB57F5F001A9EE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC496CB91FB57F5F001A9EE8 /* CourseBook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC496CBB1FB57F5F001A9EE8 /* CourseBook */ = {
+			isa = PBXGroup;
+			children = (
+				AC496CDD1FB59038001A9EE8 /* GenClass */,
+				AC496CDE1FB5904A001A9EE8 /* GenPro */,
+				AC496CBC1FB57F5F001A9EE8 /* AppDelegate.swift */,
+				AC496CBE1FB57F5F001A9EE8 /* ViewController.swift */,
+				AC496CC01FB57F5F001A9EE8 /* Main.storyboard */,
+				AC496CC61FB57F5F001A9EE8 /* Assets.xcassets */,
+				AC496CC81FB57F5F001A9EE8 /* LaunchScreen.storyboard */,
+				AC496CCB1FB57F5F001A9EE8 /* Info.plist */,
+				AC496CC31FB57F5F001A9EE8 /* CourseBook.xcdatamodeld */,
+			);
+			path = CourseBook;
+			sourceTree = "<group>";
+		};
+		AC496CDD1FB59038001A9EE8 /* GenClass */ = {
+			isa = PBXGroup;
+			children = (
+				AC496CD11FB58FCB001A9EE8 /* Catigary+CoreDataClass.swift */,
+				AC496CD31FB58FCB001A9EE8 /* Image+CoreDataClass.swift */,
+				AC496CD51FB58FCB001A9EE8 /* Course+CoreDataClass.swift */,
+			);
+			path = GenClass;
+			sourceTree = "<group>";
+		};
+		AC496CDE1FB5904A001A9EE8 /* GenPro */ = {
+			isa = PBXGroup;
+			children = (
+				AC496CD21FB58FCB001A9EE8 /* Catigary+CoreDataProperties.swift */,
+				AC496CD41FB58FCB001A9EE8 /* Image+CoreDataProperties.swift */,
+				AC496CD61FB58FCB001A9EE8 /* Course+CoreDataProperties.swift */,
+			);
+			path = GenPro;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC496CB81FB57F5F001A9EE8 /* CourseBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC496CCE1FB57F5F001A9EE8 /* Build configuration list for PBXNativeTarget "CourseBook" */;
+			buildPhases = (
+				AC496CB51FB57F5F001A9EE8 /* Sources */,
+				AC496CB61FB57F5F001A9EE8 /* Frameworks */,
+				AC496CB71FB57F5F001A9EE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CourseBook;
+			productName = CourseBook;
+			productReference = AC496CB91FB57F5F001A9EE8 /* CourseBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC496CB11FB57F5F001A9EE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "jaswanth tata";
+				TargetAttributes = {
+					AC496CB81FB57F5F001A9EE8 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AC496CB41FB57F5F001A9EE8 /* Build configuration list for PBXProject "CourseBook" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC496CB01FB57F5F001A9EE8;
+			productRefGroup = AC496CBA1FB57F5F001A9EE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC496CB81FB57F5F001A9EE8 /* CourseBook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC496CB71FB57F5F001A9EE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC496CCA1FB57F5F001A9EE8 /* LaunchScreen.storyboard in Resources */,
+				AC496CC71FB57F5F001A9EE8 /* Assets.xcassets in Resources */,
+				AC496CC21FB57F5F001A9EE8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC496CB51FB57F5F001A9EE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC496CBF1FB57F5F001A9EE8 /* ViewController.swift in Sources */,
+				AC496CBD1FB57F5F001A9EE8 /* AppDelegate.swift in Sources */,
+				AC496CDB1FB58FCB001A9EE8 /* Course+CoreDataClass.swift in Sources */,
+				AC496CC51FB57F5F001A9EE8 /* CourseBook.xcdatamodeld in Sources */,
+				AC496CDC1FB58FCB001A9EE8 /* Course+CoreDataProperties.swift in Sources */,
+				AC496CD91FB58FCB001A9EE8 /* Image+CoreDataClass.swift in Sources */,
+				AC496CD81FB58FCB001A9EE8 /* Catigary+CoreDataProperties.swift in Sources */,
+				AC496CD71FB58FCB001A9EE8 /* Catigary+CoreDataClass.swift in Sources */,
+				AC496CDA1FB58FCB001A9EE8 /* Image+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC496CC01FB57F5F001A9EE8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC496CC11FB57F5F001A9EE8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC496CC81FB57F5F001A9EE8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC496CC91FB57F5F001A9EE8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC496CCC1FB57F5F001A9EE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC496CCD1FB57F5F001A9EE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC496CCF1FB57F5F001A9EE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CourseBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CourseBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC496CD01FB57F5F001A9EE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CourseBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CourseBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC496CB41FB57F5F001A9EE8 /* Build configuration list for PBXProject "CourseBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC496CCC1FB57F5F001A9EE8 /* Debug */,
+				AC496CCD1FB57F5F001A9EE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC496CCE1FB57F5F001A9EE8 /* Build configuration list for PBXNativeTarget "CourseBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC496CCF1FB57F5F001A9EE8 /* Debug */,
+				AC496CD01FB57F5F001A9EE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AC496CC31FB57F5F001A9EE8 /* CourseBook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AC496CC41FB57F5F001A9EE8 /* CourseBook.xcdatamodel */,
+			);
+			currentVersion = AC496CC41FB57F5F001A9EE8 /* CourseBook.xcdatamodel */;
+			path = CourseBook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AC496CB11FB57F5F001A9EE8 /* Project object */;
+}

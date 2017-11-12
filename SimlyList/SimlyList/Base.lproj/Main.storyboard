@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f6m-kt-6Sy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--😀TodoList-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="SimlyList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" separatorInsetReference="fromAutomaticInsets" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hSf-W7-mak">
+                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="b5t-am-CJp"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Axd-xh-vTs"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hSf-W7-mak" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="aVm-91-LV0"/>
+                            <constraint firstItem="hSf-W7-mak" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="hzR-TM-Fvz"/>
+                            <constraint firstAttribute="trailing" secondItem="hSf-W7-mak" secondAttribute="trailing" id="i1x-HA-QuB"/>
+                            <constraint firstItem="hSf-W7-mak" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sgN-Y8-Gr9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <navigationItem key="navigationItem" title="😀TodoList" id="AkJ-Zt-xJy">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="qJj-4e-s6c">
+                            <color key="tintColor" red="0.34942701907162432" green="1" blue="0.25280881523668353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="geE-3e-yOi" kind="show" id="vLi-r6-h9g"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="hSf-W7-mak" id="8Qu-Rx-8br"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="933.60000000000002" y="161.46926536731635"/>
+        </scene>
+        <!--Add Task Vc-->
+        <scene sceneID="cHw-uq-JRN">
+            <objects>
+                <viewController id="geE-3e-yOi" customClass="addTaskVc" customModule="SimlyList" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2n6-k1-EWH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DJU-8G-QGn">
+                                <rect key="frame" x="16" y="74" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need Simly😀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suv-OU-ZbT">
+                                <rect key="frame" x="132.5" y="124" width="110" height="20.5"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <color key="textColor" red="0.85221684644670048" green="0.20725172158348362" blue="0.84633076842327726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kex-EG-eIM">
+                                <rect key="frame" x="163" y="189.5" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4NG-1f-p26">
+                                <rect key="frame" x="16" y="318" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="3" height="0.0"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.89998903873944758" green="0.94169755536097532" blue="0.94634359137055835" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="savePressed:" destination="geE-3e-yOi" eventType="touchUpInside" id="mqP-kW-3fa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.55659259066491762" green="1" blue="0.65114908124266502" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="suv-OU-ZbT" firstAttribute="centerX" secondItem="2n6-k1-EWH" secondAttribute="centerX" id="DRg-Vm-Zfi"/>
+                            <constraint firstItem="suv-OU-ZbT" firstAttribute="top" secondItem="DJU-8G-QGn" secondAttribute="bottom" constant="20" id="Gqi-rg-4Jw"/>
+                            <constraint firstItem="DJU-8G-QGn" firstAttribute="top" secondItem="dhW-kg-Za7" secondAttribute="top" constant="10" id="QKo-wM-WEE"/>
+                            <constraint firstItem="Kex-EG-eIM" firstAttribute="centerX" secondItem="2n6-k1-EWH" secondAttribute="centerX" id="YCk-AR-SeY"/>
+                            <constraint firstItem="4NG-1f-p26" firstAttribute="centerY" secondItem="2n6-k1-EWH" secondAttribute="centerY" id="alB-zq-bDi"/>
+                            <constraint firstItem="dhW-kg-Za7" firstAttribute="trailing" secondItem="4NG-1f-p26" secondAttribute="trailing" constant="16" id="goB-kN-gqE"/>
+                            <constraint firstItem="4NG-1f-p26" firstAttribute="leading" secondItem="dhW-kg-Za7" secondAttribute="leading" constant="16" id="lin-G4-rn9"/>
+                            <constraint firstItem="DJU-8G-QGn" firstAttribute="leading" secondItem="dhW-kg-Za7" secondAttribute="leading" constant="16" id="nzS-44-byM"/>
+                            <constraint firstItem="Kex-EG-eIM" firstAttribute="top" secondItem="suv-OU-ZbT" secondAttribute="bottom" constant="45" id="rGD-A8-TAh"/>
+                            <constraint firstItem="dhW-kg-Za7" firstAttribute="trailing" secondItem="DJU-8G-QGn" secondAttribute="trailing" constant="16" id="zs0-wR-Eyr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dhW-kg-Za7"/>
+                    </view>
+                    <connections>
+                        <outlet property="swicthButton" destination="Kex-EG-eIM" id="2AV-op-vCl"/>
+                        <outlet property="textLabel" destination="DJU-8G-QGn" id="McG-qb-dRm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I6n-3K-qh8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1653.5999999999999" y="160.56971514242881"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jT3-DD-mEI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f6m-kt-6Sy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J26-NN-KyB">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="YmD-9c-Www"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7sY-Dx-CGQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="148" y="163"/>
+        </scene>
+    </scenes>
+</document>
